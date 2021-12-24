@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'dual-account-app' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for dual-account-app
+  pod 'SideMenu'
+  pod 'Then'
+  pod 'Toast'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxGesture'
+  pod 'PanModal'
+  pod 'MBProgressHUD'
+  pod 'SDWebImage'
+  pod 'Gallery'
+  pod 'KRProgressHUD'
+  pod 'Lightbox'
+  pod 'BiometricAuthentication'
+end

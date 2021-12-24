@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Start screen" translatesAutoresizingMaskIntoConstraints="NO" id="0bS-Hy-EKG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Dual Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-rU-Rbw">
+                                <rect key="frame" x="20" y="84" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <color key="textColor" red="0.42599973079999998" green="0.25075376030000002" blue="0.71148055789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dual Account can give you ability to have two accounts on the same app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8R-tp-bCK">
+                                <rect key="frame" x="47" y="152.5" width="320" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.42599973079999998" green="0.25075376030000002" blue="0.71148055789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="D0t-Al-4ul">
+                                <rect key="frame" x="93.5" y="211" width="227" height="156"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clone apps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01b-y9-w5H">
+                                <rect key="frame" x="137" y="392" width="140.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <color key="textColor" red="0.42599973079999998" green="0.25075376030000002" blue="0.71148055789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in two accounts at the same app same time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l7-Pp-BKX">
+                                <rect key="frame" x="83" y="455.5" width="248" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.42599973079999998" green="0.25075376030000002" blue="0.71148055789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V8R-tp-bCK" firstAttribute="width" secondItem="rUy-rU-Rbw" secondAttribute="width" multiplier="0.855" id="29Q-yz-aWj"/>
+                            <constraint firstItem="0bS-Hy-EKG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5R1-tP-YMC"/>
+                            <constraint firstItem="V8R-tp-bCK" firstAttribute="top" secondItem="rUy-rU-Rbw" secondAttribute="bottom" constant="35" id="84h-hj-dcP"/>
+                            <constraint firstItem="3l7-Pp-BKX" firstAttribute="top" secondItem="01b-y9-w5H" secondAttribute="bottom" constant="30" id="Dhi-QM-AYN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bS-Hy-EKG" secondAttribute="trailing" id="F4s-dj-JBM"/>
+                            <constraint firstItem="3l7-Pp-BKX" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="FLL-aB-2Et"/>
+                            <constraint firstItem="D0t-Al-4ul" firstAttribute="top" secondItem="V8R-tp-bCK" secondAttribute="bottom" constant="25" id="FWH-wH-CyA"/>
+                            <constraint firstItem="V8R-tp-bCK" firstAttribute="centerX" secondItem="rUy-rU-Rbw" secondAttribute="centerX" id="HSs-xn-WR1"/>
+                            <constraint firstItem="D0t-Al-4ul" firstAttribute="centerX" secondItem="01b-y9-w5H" secondAttribute="centerX" id="JKd-DR-kng"/>
+                            <constraint firstItem="01b-y9-w5H" firstAttribute="top" secondItem="D0t-Al-4ul" secondAttribute="bottom" constant="25" id="LHI-Vi-GBu"/>
+                            <constraint firstItem="01b-y9-w5H" firstAttribute="centerX" secondItem="3l7-Pp-BKX" secondAttribute="centerX" id="O1x-ou-5WL"/>
+                            <constraint firstItem="rUy-rU-Rbw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Smh-ZM-VRd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="rUy-rU-Rbw" secondAttribute="leading" constant="-20" id="VCg-Vm-pbz"/>
+                            <constraint firstAttribute="bottom" secondItem="0bS-Hy-EKG" secondAttribute="bottom" id="ZvL-ec-Jsh"/>
+                            <constraint firstItem="D0t-Al-4ul" firstAttribute="centerX" secondItem="V8R-tp-bCK" secondAttribute="centerX" id="mEO-0M-NXn"/>
+                            <constraint firstItem="rUy-rU-Rbw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="r5v-lW-IpC"/>
+                            <constraint firstItem="0bS-Hy-EKG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tkh-cB-Mvt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Start screen" width="375" height="812"/>
+        <image name="main" width="227" height="156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

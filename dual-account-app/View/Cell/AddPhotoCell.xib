@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddPhotoCell" customModule="dual_account_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSg-ad-OgR">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="163"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cc-La-TQn" customClass="MagicView" customModule="dual_account_app" customModuleProvider="target">
+                                <rect key="frame" x="145" y="0.0" width="16" height="163"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="a3H-KD-vYu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsC-0O-Dnp" customClass="MagicView" customModule="dual_account_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-dg-DsM">
+                                <rect key="frame" x="0.0" y="16" width="145" height="147"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEE-aZ-3gl">
+                                <rect key="frame" x="120.5" y="8" width="32.5" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aEE-aZ-3gl" secondAttribute="height" multiplier="1:1" id="PrH-X6-wPK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="remove"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Cc-La-TQn" secondAttribute="trailing" id="G6L-dT-eDJ"/>
+                            <constraint firstItem="aEE-aZ-3gl" firstAttribute="top" secondItem="zsC-0O-Dnp" secondAttribute="centerY" id="JhP-Pf-wW4"/>
+                            <constraint firstItem="aEE-aZ-3gl" firstAttribute="height" secondItem="nSg-ad-OgR" secondAttribute="height" multiplier="0.2" id="Oha-6p-oYC"/>
+                            <constraint firstItem="oF9-dg-DsM" firstAttribute="top" secondItem="zsC-0O-Dnp" secondAttribute="bottom" id="TFu-Mp-sm9"/>
+                            <constraint firstItem="zsC-0O-Dnp" firstAttribute="leading" secondItem="nSg-ad-OgR" secondAttribute="leading" id="U4G-lE-sSY"/>
+                            <constraint firstItem="aEE-aZ-3gl" firstAttribute="trailing" secondItem="3Cc-La-TQn" secondAttribute="centerX" id="XRm-vp-i5b"/>
+                            <constraint firstAttribute="bottom" secondItem="oF9-dg-DsM" secondAttribute="bottom" id="YSi-Ct-Nyq"/>
+                            <constraint firstItem="3Cc-La-TQn" firstAttribute="leading" secondItem="oF9-dg-DsM" secondAttribute="trailing" id="aC1-LN-nYr"/>
+                            <constraint firstItem="zsC-0O-Dnp" firstAttribute="height" secondItem="3Cc-La-TQn" secondAttribute="width" multiplier="1:1" id="csR-eO-gXm"/>
+                            <constraint firstItem="3Cc-La-TQn" firstAttribute="leading" secondItem="zsC-0O-Dnp" secondAttribute="trailing" id="dzQ-b9-C9P"/>
+                            <constraint firstItem="3Cc-La-TQn" firstAttribute="top" secondItem="nSg-ad-OgR" secondAttribute="top" id="q7Y-IM-JxZ"/>
+                            <constraint firstItem="oF9-dg-DsM" firstAttribute="leading" secondItem="nSg-ad-OgR" secondAttribute="leading" id="u3N-w0-AYk"/>
+                            <constraint firstAttribute="bottom" secondItem="3Cc-La-TQn" secondAttribute="bottom" id="wJK-mk-8Gg"/>
+                            <constraint firstItem="zsC-0O-Dnp" firstAttribute="top" secondItem="nSg-ad-OgR" secondAttribute="top" id="zMk-Lx-5g8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nSg-ad-OgR" secondAttribute="bottom" id="AtC-O1-Axm"/>
+                <constraint firstItem="nSg-ad-OgR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E7J-Wl-kDy"/>
+                <constraint firstItem="nSg-ad-OgR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FSX-hf-dT0"/>
+                <constraint firstAttribute="trailing" secondItem="nSg-ad-OgR" secondAttribute="trailing" id="tFL-gA-dIM"/>
+            </constraints>
+            <size key="customSize" width="481" height="374"/>
+            <connections>
+                <outlet property="photoImageView" destination="oF9-dg-DsM" id="VI1-UT-Ww6"/>
+                <outlet property="removeButton" destination="aEE-aZ-3gl" id="j5o-f6-zsi"/>
+            </connections>
+            <point key="canvasLocation" x="439.85507246376812" y="157.70089285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="remove" width="512" height="512"/>
+    </resources>
+</document>

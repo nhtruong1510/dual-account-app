@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleryItem" customModule="dual_account_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_temp" translatesAutoresizingMaskIntoConstraints="NO" id="VSL-BR-nyp">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="102"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-0v-QTk">
+                        <rect key="frame" x="5" y="82" width="144" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="UzK-y1-1o6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAutoResize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSJ-Ge-cIw">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="102"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48g-5p-emd">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="102"/>
+                                <connections>
+                                    <action selector="actionTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FHQ-Ff-8c8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="gm7-RQ-chY">
+                                <rect key="frame" x="129" y="10" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gm7-RQ-chY" secondAttribute="height" id="UFJ-jU-KTa"/>
+                                    <constraint firstAttribute="height" constant="15" id="ro5-fB-EB7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gm7-RQ-chY" secondAttribute="trailing" constant="10" id="Hsx-uo-laF"/>
+                            <constraint firstItem="48g-5p-emd" firstAttribute="top" secondItem="PSJ-Ge-cIw" secondAttribute="top" id="PEu-Zc-sXV"/>
+                            <constraint firstAttribute="bottom" secondItem="48g-5p-emd" secondAttribute="bottom" id="VhN-df-TOa"/>
+                            <constraint firstAttribute="trailing" secondItem="48g-5p-emd" secondAttribute="trailing" id="aH0-SM-DUh"/>
+                            <constraint firstItem="48g-5p-emd" firstAttribute="leading" secondItem="PSJ-Ge-cIw" secondAttribute="leading" id="hF4-Wq-ta3"/>
+                            <constraint firstItem="gm7-RQ-chY" firstAttribute="top" secondItem="PSJ-Ge-cIw" secondAttribute="top" constant="10" id="qdJ-G9-uy5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VSL-BR-nyp" secondAttribute="trailing" id="4HL-k8-wLz"/>
+                <constraint firstAttribute="bottom" secondItem="4jV-0v-QTk" secondAttribute="bottom" id="5hn-et-tFr"/>
+                <constraint firstItem="4jV-0v-QTk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="6Fj-Vd-hGs"/>
+                <constraint firstAttribute="trailing" secondItem="PSJ-Ge-cIw" secondAttribute="trailing" id="AJT-PE-Raa"/>
+                <constraint firstAttribute="trailing" secondItem="4jV-0v-QTk" secondAttribute="trailing" constant="5" id="H67-rE-l17"/>
+                <constraint firstItem="VSL-BR-nyp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="USR-of-vDL"/>
+                <constraint firstAttribute="bottom" secondItem="VSL-BR-nyp" secondAttribute="bottom" id="Wdg-f4-Z96"/>
+                <constraint firstItem="VSL-BR-nyp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="agV-mY-nIU"/>
+                <constraint firstAttribute="bottom" secondItem="PSJ-Ge-cIw" secondAttribute="bottom" id="dOL-3d-20Q"/>
+                <constraint firstItem="PSJ-Ge-cIw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fJx-mf-imQ"/>
+                <constraint firstItem="PSJ-Ge-cIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p4D-pr-kAS"/>
+            </constraints>
+            <size key="customSize" width="154" height="102"/>
+            <connections>
+                <outlet property="iconSelect" destination="gm7-RQ-chY" id="qYC-ZX-IkR"/>
+                <outlet property="image" destination="VSL-BR-nyp" id="2pj-UZ-uy1"/>
+                <outlet property="lblVideoInfo" destination="4jV-0v-QTk" id="Bfr-Te-BnV"/>
+                <outlet property="viewSelected" destination="PSJ-Ge-cIw" id="R9c-OY-mhJ"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="141.29464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_temp" width="146" height="115"/>
+        <image name="tick" width="512" height="512"/>
+    </resources>
+</document>
